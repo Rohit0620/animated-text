@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'tektur', sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    min-height:100vh;
+    
+}
+.wrapper{
+    display: flex;
+}
+
+.wrapper .text{
+    color: #fff;
+    font-size:85px;
+    font-weight: 900px;
+    margin-bottom: 100px;
+    
+}
+.wrapper .run-text{
+    margin-left:  15px; 
+    height:100px;
+    line-height: 90px;
+    overflow :hidden;
+   
+}
+
+.run-text  li{
+    list-style: none;
+    color: rgb(243, 20, 20);
+    font-size: 100px;
+    font-weight: 900px;
+    position: relative;
+    margin-left:15px ;
+    top:0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1}
